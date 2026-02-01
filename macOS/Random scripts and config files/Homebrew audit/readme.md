@@ -67,7 +67,7 @@ Deploy just 8 attributes that cover 90% of security use cases. Less admin overhe
 **Option B: Extended Set**
 Deploy all 24 attributes for granular compliance reporting and automated remediation workflows.
 
-👉 **See the [Deployment Guide](homebrew_security_check_v3_0_2_DEPLOYMENT.md) for complete setup instructions and attribute scripts.**
+👉 **See the [Deployment Guide](deployment_guide_homebrew_audit.md) for complete setup instructions and attribute scripts.**
 
 ### Check the Logs
 
