@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(shellcheck:*)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path '/Users/oktay.sari/Library/CloudStorage/OneDrive-AllThingsCloud/Repository/claude_code_dev/macOS_icloud_service_impact/Get-iCloudServiceReport.ps1'\" 2>&1)",
+      "Bash(git checkout:*)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Get-iCloudServiceReport.ps1\")",
+      "Read(//tmp/**)",
+      "Bash(xxd /Users/oktay.sari/Library/CloudStorage/OneDrive-AllThingsCloud/Repository/claude_code_dev/macOS_icloud_service_impact/Get-iCloudServiceReport.ps1)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Get-iCloudServiceReport.ps1 -ExcludeRule PSUseBOMForUnicodeEncodedFile\")",
+      "Bash(grep -n \"ConvertTo-Html\\\\|Export-Csv\\\\|Out-File\\\\|pageSize\\\\|$top\" /Users/oktay.sari/Library/CloudStorage/OneDrive-AllThingsCloud/Repository/claude_code_dev/FindDuplicateDefenderDevices/Find-DuplicateDefenderDevices.ps1)",
+      "Bash(grep -n \"ConvertTo-Html\\\\|Export-Csv\\\\|Out-File\\\\|pageSize\\\\|$top\" /Users/oktay.sari/Library/CloudStorage/OneDrive-AllThingsCloud/Repository/claude_code_dev/FindDuplicateMacDevices/Find-DuplicateMacDevices.ps1)",
+      "Bash(grep -n \"$top\\\\|pageSize\\\\|skip\\\\|paging\\\\|1000\" /Users/oktay.sari/Library/CloudStorage/OneDrive-AllThingsCloud/Repository/claude_code_dev/FindDuplicateDefenderDevices/Find-DuplicateDefenderDevices.ps1)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Generate-ExampleReport.ps1 -ExcludeRule PSUseBOMForUnicodeEncodedFile\")",
+      "Bash(pwsh -File Generate-ExampleReport.ps1)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Get-macOSServiceReport.ps1\" 2>&1)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Generate-ExampleReport.ps1\" 2>&1)",
+      "Bash(pwsh -Command \".\\\\Generate-ExampleReport.ps1\" 2>&1)",
+      "Bash(ls:*)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Get-macOSServiceReport.ps1; Invoke-ScriptAnalyzer -Path Generate-ExampleReport.ps1\" 2>&1)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)",
+      "Bash(pwsh -Command \"Invoke-ScriptAnalyzer -Path Generate-ExampleReport.ps1\")",
+      "Bash(pwsh -Command \"./Generate-ExampleReport.ps1\")"
+    ]
+  }
+}
