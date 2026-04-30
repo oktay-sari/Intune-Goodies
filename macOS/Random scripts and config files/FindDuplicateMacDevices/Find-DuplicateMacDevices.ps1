@@ -2102,7 +2102,7 @@ Write-Host -Object ""
 
 "@
             foreach ($target in $removeTargets) {
-                $displayName = $target.DisplayName -replace "'", "''"
+                $displayName = $target.DisplayName -replace "'", "''" -replace '([\u2018-\u201B])', '$1$1'
                 $userInfoLine = if ($target.PrimaryUser) {
                     $userSignIn = if ($target.PrimaryUserDaysSinceSignIn) { "$($target.PrimaryUserDaysSinceSignIn) days ago" } else { "N/A" }
                     "# User: $($target.PrimaryUser) ($($target.PrimaryUserStatus)) | User last sign-in: $userSignIn"
@@ -2148,7 +2148,7 @@ Write-Host -Object ""
 
 "@
             foreach ($target in $intuneRemoveTargets) {
-                $displayName = $target.DeviceName -replace "'", "''"
+                $displayName = $target.DeviceName -replace "'", "''" -replace '([\u2018-\u201B])', '$1$1'
                 $userInfoLine = if ($target.PrimaryUser) {
                     $userSignIn = if ($target.PrimaryUserDaysSinceSignIn) { "$($target.PrimaryUserDaysSinceSignIn) days ago" } else { "N/A" }
                     "# User: $($target.PrimaryUser) ($($target.PrimaryUserStatus)) | User last sign-in: $userSignIn"
